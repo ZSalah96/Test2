@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:rgb(253, 251, 251);
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+    
+}
+body.dark-mode ul li a{
+    background-color: #333;
+    color: #fff;
+    
+}
+
+body.dark-mode .logo{
+    background: url(WhiteMaseratiLogo.png) transparent;
+    width: 110px;
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+
+
+.models{
+    display: grid;
+}
+
+.titre{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.SUV,.Sport{
+    display: flex;
+    margin:10px;
+    align-items: center;
+    height: 350px;
+    
+}
+.SUV:hover,.Sport:hover{
+    border-style:outset;
+    border-radius: 5px;
+}
+.decription1,.decription2{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    
+    width: 600px;
+    margin-left: 100px;
+}
+.discover{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: rgb(28, 220, 217);
+}
+.discover:hover{
+    color: white;
+    background-image: linear-gradient(to right,rgba(4, 4, 61, 0.324),rgb(7, 5, 52));
+}
+.SUV img,.Sport img {
+    margin-left: 20px;
+    height:90%;
+    width: 700px;
+    
+}
+h2{
+    margin-left:20px;
+}
+
+
+
+
+
+
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+}
+.header{
+    width:100%;
+    margin:2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+}
+
+
+
+.logo{
+    width: 120px;
+    height: 50px;
+    background: url(Maserati_logo.PNG) transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.nav{
+    background-color: transparent;
+}
+.nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+.nav ul li{
+    font-size:14px;
+    font-weight: 500;
+    list-style: none;
+    letter-spacing: 1px;
+}
+.nav ul li a{
+    padding: 10px;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.nav ul li a:hover{
+    border-bottom: 2px solid rgba(79, 86, 131, 0.852);
+}
+
+.buttons{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+button{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+button:hover{
+    color: aliceblue;
+    background-image: linear-gradient(to right,rgba(4, 4, 61, 0.324),rgb(7, 5, 52));
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+/*input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}*/
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
